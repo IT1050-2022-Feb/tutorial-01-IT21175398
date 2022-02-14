@@ -11,9 +11,21 @@ sum = 1+2+3+....+ 99+100 = 5050
 n -> 1-
 sum = 1+2+3+...+10 = 55 */
 
-#include <stdio.h>
-int main() {
+#include <stdio.h> //header
+int main() {  //main func
+  int n,count,sum =0;   //declare var
+
+    printf ("Enter your end number:");  //user text
+    scanf("%d", &n);  //user input
+
+    for (count=1; count<= n; ++count){  // usinf for loop
+
+      sum +=count;    //calc sum or numbers
+
+    }
+
+    printf("Sum is: %d ", sum); //output sum
   
-  return 0;
+  return 0; //end of main
 }
 
